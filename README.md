@@ -16,26 +16,31 @@ MoneyTrack is a responsive React Native app designed for effective personal fina
 ## Screenshots
 
 ### 1. First-Time User Splash Screen
-![First-Time Splash Screen](./Screenshots/01.jpeg){:width="250px"}
-![First-Time Splash Screen](./Screenshots/02.jpeg){:width="250px"}
-![First-Time Splash Screen](./Screenshots/03.jpeg){:width="250px"}
-![First-Time Splash Screen](./Screenshots/04.jpeg){:width="250px"}
+<table>
+  <tr>
+    <td><img src="./Screenshots/01.jpeg" width="250px" /></td>
+    <td><img src="./Screenshots/02.jpeg" width="250px" /></td>
+  </tr>
+  <tr>
+    <td><img src="./Screenshots/03.jpeg" width="250px" /></td>
+    <td><img src="./Screenshots/04.jpeg" width="250px" /></td>
+  </tr>
+</table>
 
 ### 2. Daily Splash Screen
-![Daily Splash Screen](./Screenshots/dailysplash.jpeg){:width="250px"}
+<img src="./Screenshots/dailysplash.jpeg" width="250px" />
 
 ### 3. Home Screen
-![Home Screen](./Screenshots/home.jpeg){:width="250px"}
+<img src="./Screenshots/home.jpeg" width="250px" />
 
 ### 4. Analytics Screen
-![Analytics Screen](./Screenshots/analytics.jpeg){:width="250px"}
+<img src="./Screenshots/analytics.jpeg" width="250px" />
 
 ### 5. Profile Screen
-![Profile Screen](./Screenshots/profile.jpeg){:width="250px"}
+<img src="./Screenshots/profile.jpeg" width="250px" />
 
 ### 6. User Details Input
-![User Details Input](./Screenshots/userdetails.jpeg){:width="250px"}
-
+<img src="./Screenshots/userdetails.jpeg" width="250px" />
 
 ---
 
