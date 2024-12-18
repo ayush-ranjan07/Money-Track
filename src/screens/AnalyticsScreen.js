@@ -14,7 +14,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 const AnalyticsScreen = () => {
     const { expenses } = useContext(ExpenseContext);
-    const [selectedDate, setSelectedDate] = useState(new Date()); // State for the selected date
+    const [selectedDate, setSelectedDate] = useState(new Date()); 
 
     // Filter expenses based on the selected month and year
     const expensesForSelectedDate = expenses.filter((expense) => {
@@ -34,7 +34,7 @@ const AnalyticsScreen = () => {
     // Calculate category totals
     // Calculate category totals
 const categoryTotals = expensesForSelectedDate.reduce((acc, expense) => {
-    const category = (expense.category || 'Uncategorized').trim().toLowerCase(); // Normalize category
+    const category = (expense.category || 'Uncategorized').trim().toLowerCase(); 
     acc[category] = (acc[category] || 0) + expense.amount;
     return acc;
 }, {});
@@ -46,7 +46,7 @@ const categoryTotals = expensesForSelectedDate.reduce((acc, expense) => {
         amount: categoryTotals[category],
         color: `rgba(${Math.floor(Math.random() * 256)}, ${Math.floor(
             Math.random() * 256
-        )}, ${Math.floor(Math.random() * 256)}, 0.8)`, // Generate random colors
+        )}, ${Math.floor(Math.random() * 256)}, 0.8)`, 
         legendFontColor: '#fff',
         legendFontSize: 12,
     }));
@@ -105,7 +105,7 @@ const categoryTotals = expensesForSelectedDate.reduce((acc, expense) => {
                 />
             )}
 
-            {/* Display Category Data */}
+       
             <FlatList
                 data={pieData}
                 keyExtractor={(item) => item.name}

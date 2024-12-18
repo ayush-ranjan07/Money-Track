@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { GestureHandlerRootView } from 'react-native-gesture-handler'; // Import GestureHandlerRootView
+import { GestureHandlerRootView } from 'react-native-gesture-handler'; 
 
 import HomeScreen from './src/screens/HomeScreen';
 import AnalyticsScreen from './src/screens/AnalyticsScreen';
@@ -27,23 +27,21 @@ export default function App() {
             const isFirstTime = await AsyncStorage.getItem('isFirstTime');
             
             if (isFirstTime === null) {
-              // If no value, it's the first time, set the route to 'FirstSplash'
               setInitialRoute('FirstSplash');
-              await AsyncStorage.setItem('isFirstTime', 'false'); // Set 'isFirstTime' to 'false'
+              await AsyncStorage.setItem('isFirstTime', 'false'); 
             } else {
-              // If value exists, it's not the first time, set route to 'DailySplash'
               setInitialRoute('DailySplash');
             }
           } catch (error) {
             console.error("Error reading 'isFirstTime' from AsyncStorage:", error);
-            setInitialRoute('FirstSplash'); // Fallback route
+            setInitialRoute('FirstSplash'); 
           }
         };
     
         checkFirstTime();
       }, []);
 
-    if (initialRoute === null) return null; // Optionally show a spinner or loading indicator here
+    if (initialRoute === null) return null; 
 
     const MainApp = () => (
         <Tab.Navigator
@@ -60,7 +58,7 @@ export default function App() {
                     return <Ionicons name={iconName} size={size} color={color} />;
                 },
                 tabBarStyle: {
-                    backgroundColor: 'black', // Change the background color of the tab bar
+                    backgroundColor: 'black', 
                   },
                 tabBarActiveTintColor: '#06D001',
                 tabBarInactiveTintColor: 'gray',
@@ -75,7 +73,7 @@ export default function App() {
 
     return (
         <ExpenseProvider>
-            <GestureHandlerRootView style={{ flex: 1 }}> {/* Wrap the NavigationContainer inside GestureHandlerRootView */}
+            <GestureHandlerRootView style={{ flex: 1 }}> {}
                 <NavigationContainer>
                     <Stack.Navigator screenOptions={{ headerShown: false }}>
                         {initialRoute === 'FirstSplash' && (
