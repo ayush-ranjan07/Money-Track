@@ -42,6 +42,9 @@ MoneyTrack is a responsive React Native app designed for effective personal fina
 ### 6. User Details Input
 <img src="./Screenshots/userdetails.jpeg" width="250px" />
 
+### 6. Expense Adding Screen
+<img src="./Screenshots/expense.jpeg" width="250px" />
+
 ---
 
 ## Installation
