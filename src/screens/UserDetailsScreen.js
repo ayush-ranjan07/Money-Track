@@ -40,7 +40,7 @@ const UserDetailsScreen = ({ navigation }) => {
     return (
         <LinearGradient colors={['#059212', '#000000']} style={styles.gradient}>
             <KeyboardAvoidingView style={styles.container} behavior="padding">
-                <Text style={styles.title}>Welcome to MoneyTrack</Text>
+                <Text style={styles.title}>Welcome</Text>
                 <Text style={styles.subtitle}>Let’s personalize your experience</Text>
                 
                 <View style={styles.card}>
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
         marginBottom: 30,
     },
     card: {
-        backgroundColor: '#1E1E1E',
+        backgroundColor: 'black',
         padding: 20,
         borderRadius: 15,
         width: '100%',

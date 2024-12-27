@@ -32,7 +32,7 @@ const AddExpenseModal = ({ isVisible, onClose, onSave }) => {
         <Modal visible={isVisible} transparent animationType="slide">
             <View style={styles.modalContainer}>
                 <View style={styles.modalContent}>
-                    <Text style={styles.modalTitle}>Add Expense</Text>
+                    <Text style={styles.modalTitle}>Add Expens</Text>
                     <TextInput
                         style={styles.input}
                         placeholder="Expense Title"
